@@ -268,6 +268,6 @@ The contract emits events for important lifecycle transitions.
 ## Team
 Built for [SHEVIBE]
 ### Contributors
-- Name — Frontend / PWA
+- MANSI — Frontend / PWA
 - Name — Backend / AI
 - Name — Blockchain / Web3
