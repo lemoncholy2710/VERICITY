@@ -19,3 +19,20 @@ def create_complaint(
     db.refresh(complaint)
 
     return complaint
+
+
+def get_all_complaints(
+    db: Session,
+) -> list[Complaint]:
+    return db.query(Complaint).all()
+
+
+def get_complaint_by_id(
+    db: Session,
+    complaint_id: str,
+) -> Complaint | None:
+    return (
+        db.query(Complaint)
+        .filter(Complaint.complaint_id == complaint_id)
+        .first()
+    )
